@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600&display=swap');
+
+:root {
+    --titles: 'Inclusive Sans';
+    --texts: 'Nunito Sans';
+    --color1: #00BFA6;
+    --color2: rgb(42, 78, 240);
+    --color3: rgb(28, 41, 214);
+    --white1: #fff;
+    --white2: #f1f1f1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  */
+/* códigos reutilizaveis */
+.container {
+    width: 90%;
+    height: 100vh;
+    padding: 5rem 0;
+    margin: 1rem auto;
+}
+
+.container-footer {
+    width: 90%;
+    height: auto;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.reverse-flex-row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.centro{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.centro-horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+.centro-vertical {
+    display: flex;
+    align-items: center;
+  
+}
+
+.text-center {
+    text-align: center;
+}
+
+.half-side {
+    width: 48%;
+}
+
+.bg-secundary{
+    background-color: var(--white2);
+}
+/* fim dos códigos reútilizaveis */
+
+body {
+    overflow-x: hidden;
+}
+
+/* cabeçalho */
+header {
+    width: 100vw;
+    margin-top: -1rem;
+    padding: 1rem;
+    background-color: var(--white2);
+    box-shadow: 0 5px 5px -5px #000;
+    position: fixed;
+    z-index: 1;
+}
+
+header img, header h1, .menu-hambuguer, .icon {
+    cursor: pointer;
+}
+.container-header {
+    display: flex;
+    justify-content:space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size:1.5em;
+    font-family: var(--titles);
+}
+/* fim do cabeçalho */
+
+/* menu */
+
+.menu-nav a, a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+
+.menu-nav a:hover {
+    color: var(--color2);
+}
+/* fim do menu */
+
+/* fontes */
+.sub-titles, .cta-button{
+    font-family: var(--titles);
+    margin: 1.5rem 0;
+}
+
+.sub-titles {
+    border-left: .5rem solid var(--color2);
+    padding: 1rem;
+}
+
+h2 {
+    margin: 3rem 0;
+}
+
+li {
+    list-style:none ;
+}
+
+p, li {
+    font-family: var(--texts);
+}
+
+.sub-titles, p, li {
+    margin: 0 .3rem;
+}
+
+.change{
+    color: var(--color2);
+}
+/* fim das fontes */
+
+/* imagens */
+.img-content{
+    margin: auto;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.ilustracao {
+    width: 100%;
+   
+}
+/* fim das imagens */
+
+/* botões */
+.cta-button{
+    width: 10rem;
+    height: 1.6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color2);
+    color: var(--white1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cta-button:hover{
+    background-color:  var(--color3);
+}
+
+.cta-button-secundary {
+    width: 10rem;
+    height: 1.6rem;
+    font-size: 1rem;
+    border: 2px solid var(--color2);
+    border-radius: 5px;
+    background-color: var(--white1);
+    cursor: pointer;
+    margin: 0 1rem;
+    transition: .3s;
+
+}
+
+.cta-button-secundary:hover {
+    background-color: var(--color3);
+    color: var(--white1);
+}
+/* fim dos botoes */
+
+/* cards */
+.cards-section{
+    gap: 3rem;
+}
+
+.card{
+    padding: 1rem;
+    margin-top: 2rem;
+    height: 28rem;
+    background-color: var(--white2);
+}
+
+.card-image {
+    margin-bottom: 1rem;
+    border: solid 1px;
+    width: 95%;
+    height: 15rem;
+    margin: .5rem auto;
+}
+
+.card-image figure {
+    width: 100%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+}
+
+.load {
+    width: 3rem;
+    height: 3rem;
+    border-top: 4px solid var(--color1);
+    border-radius: 50%;
+    animation: load 3s linear infinite;
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* fim dos cards */
+
+/* icones */
+.icons-row{
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.icon{
+    object-fit: contain;
+    aspect-ratio: 4/3;
+    width: 3rem;
+}
+/* fim dos icones */
+
+img[src="./img/ilustracao2.svg"] {
+    background-color: var(--white1);
+}
+
+/* footer  */
+.container-footer .half-side {
+    margin-left: auto;
+    margin-right: 0;
+    width: auto;
+}
+
+.container-footer .half-side img {
+    filter: grayscale(100%);
+    width: 1.8rem;
+}
+
+.divisa {
+    width: 100%;
+    background-color: var(--white2);
+}
+
+.container-footer .flex .half-side:nth-child(1) {
+    margin-left: 0;
+    border-right: solid 4px var(--white2);
+    width: 44%;
+}
+/* fim do footer */
