@@ -120,6 +120,10 @@
     /* fim do menu */
 
     /* fonte */
+    h1 {
+      font-size: .5rem;
+    }
+
     .sub-titles {
       font-size: 1.05rem;
       margin: 1rem 0;

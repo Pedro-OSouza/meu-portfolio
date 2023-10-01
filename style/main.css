@@ -291,7 +291,5 @@ img[src="./img/ilustracao2.svg"] {
 
 .container-footer .flex .half-side:nth-child(1) {
     margin-left: 0;
-    border-right: solid 4px var(--white2);
-    width: 44%;
 }
 /* fim do footer */
