@@ -1,2 +1,2 @@
 # meu-portfolio
- Repositório onde guardare os arquivos do meu portfólio.
+ Repositório onde guardarei os arquivos do meu portfólio.
