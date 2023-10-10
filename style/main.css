@@ -93,7 +93,7 @@ header {
     margin-top: -1rem;
     padding: 1rem;
     background-color: var(--white2);
-    box-shadow: 0 5px 5px -5px #000;
+    box-shadow: 0 5px 5px -5px #0000728a;
     position: fixed;
     z-index: 1;
 }
@@ -125,6 +125,7 @@ header h1{
 .menu-nav a:hover {
     color: var(--color2);
 }
+
 /* fim do menu */
 
 /* fontes */
@@ -188,6 +189,7 @@ p, li {
 
 .cta-button:hover{
     background-color:  var(--color3);
+    transform: scale(1.01);
 }
 
 .cta-button-secundary {
@@ -219,6 +221,11 @@ p, li {
     margin-top: 2rem;
     height: 28rem;
     background-color: var(--white2);
+    box-shadow: 0px 0px 5px 2px #787e9c8f;
+}
+
+.card:hover {
+    transform: scale(1.01);
 }
 
 .card-image {
