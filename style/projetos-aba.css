@@ -102,16 +102,12 @@ p{
     }
   }
 
-  .card {
-    margin-bottom: 1rem;
-    border: 1px solid;
-  }
-
-  .card{
+.card{
     width: 100%;
     padding: 1rem;
     margin-top: 2rem;
     height: 28rem;
+    margin-bottom: 1rem;
     background-color: var(--white1);
     box-shadow: 0px 0px 5px 2px #787e9c8f;
 }
