@@ -6,6 +6,8 @@
     --color1: #00BFA6;
     --color2: rgb(42, 78, 240);
     --color3: rgb(28, 41, 214);
+    --color3-shadow: rgb(5, 17, 180);
+    --color3-shadow2: rgb(0, 2, 124);
     --white1: #fff;
     --white2: #f1f1f1;
 }
@@ -161,11 +163,16 @@ h3, p {
     color: var(--white1);
     cursor: pointer;
     transition: .3s;
+    box-shadow: 0 3px 0 var(--color3-shadow), 3px 3px 0 var(--color3-shadow);
 }
 
 .cta-button:hover{
     background-color:  var(--color3);
     transform: scale(1.01);
+    box-shadow: 0 3px 0 var(--color3-shadow), 3px 3px 0 var(--color3-shadow);
 }
 
-
+.cta-button:active {
+    background-color: var(--color2);
+    box-shadow: 0 -3px 0 var(--color3-shadow), -3px -3px 0 var(--color3-shadow);
+}
