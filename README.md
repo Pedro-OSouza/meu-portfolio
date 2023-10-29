@@ -13,9 +13,9 @@ O projeto se trata de um site portifólio responsivo que se adapta perfeitamente
 
 O site conta apenas com uma stack de front-end e voltado apenas para o lado do cliente.
 As tecnólogias usadas foram:
-HTML: para a estruturação das páginas.
-CSS: para a estilização das páginas.
-Javascript: para criar a interatividade do site, principalmente em dispositivos móveis.
+### HTML: para a estruturação das páginas.
+### CSS: para a estilização das páginas.
+### Javascript: para criar a interatividade do site, principalmente em dispositivos móveis.
 
 Não foi usado nem um framework ou biblioteca. Essa decisão foi tomada com o intuito de reduzir a dependência do site tornando o mais leve e melhorando o seu desempenho em qualquer dispositivos com qualquer conexão.
 ## Autores
