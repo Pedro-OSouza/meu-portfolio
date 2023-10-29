@@ -1,3 +1,9 @@
+@media (min-width: 1100px) {
+  .container, .container-header {
+    max-width: 1064px;
+  }
+}
+
 @media (min-width: 768px) {  
   .menu-nav {
         display: flex;

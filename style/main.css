@@ -6,6 +6,8 @@
     --color1: #00BFA6;
     --color2: rgb(42, 78, 240);
     --color3: rgb(28, 41, 214);
+    --color3-shadow: rgb(5, 17, 180);
+    --color3-shadow2: rgb(0, 2, 124);
     --white1: #fff;
     --white2: #f1f1f1;
 }
@@ -85,6 +87,7 @@
 
 body {
     overflow-x: hidden;
+    transition: 2s;
 }
 
 /* cabeçalho */
@@ -96,6 +99,7 @@ header {
     box-shadow: 0 5px 5px -5px #0000728a;
     position: fixed;
     z-index: 1;
+    transition: 2s;
 }
 
 header img, header h1, .menu-hambuguer, .icon {
@@ -185,11 +189,18 @@ p, li {
     color: var(--white1);
     cursor: pointer;
     transition: .3s;
+    box-shadow: 0 3px 0 var(--color3-shadow), 3px 3px 0 var(--color3-shadow);
 }
 
 .cta-button:hover{
     background-color:  var(--color3);
     transform: scale(1.01);
+    box-shadow: 0 3px 0 var(--color3-shadow2), 3px 3px 0 var(--color3-shadow2);
+}
+
+.cta-button:active {
+    background-color: var(--color2);
+    box-shadow: 0 -3px 0 var(--color3-shadow), -3px -3px 0 var(--color3-shadow);
 }
 
 .cta-button-secundary {
@@ -209,6 +220,7 @@ p, li {
     background-color: var(--color3);
     color: var(--white1);
 }
+
 /* fim dos botoes */
 
 /* cards */
@@ -300,3 +312,36 @@ img[src="./img/ilustracao2.svg"] {
     margin-left: 0;
 }
 /* fim do footer */
+
+/* iframe */
+.ifr-container{
+    position: relative;
+    height: 0;
+    transition: 2s;
+}
+
+.ifr {
+    width: 100vw;
+    height: 100%;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.ifr-open {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.body-ifr-open{
+    overflow-y: hidden;
+}
+
+.header-ifr-open{
+    display: none;
+    position: relative;
+    top: -2rem;
+}

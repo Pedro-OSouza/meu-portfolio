@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style/midia.css">
 </head>
 <body>
+    
     <header>
         <div class="container-header centro-vertical flex">
             <img src="./img/logo.png" alt="Logo de Pedro de Souza" class="logo">
@@ -84,8 +85,8 @@
 
     <section id="servicos">
         <div class="container flex">
-            <div class="centro-vertical">                
-                <div class="flex-column half-side">
+            <div class="centro-vertical half-side">                
+                <div class="flex-column">
                     <h2 class="sub-titles">O Que Faço para Você:</h2>
                     <p>
                         Ofereço serviços de construção de sites 
@@ -141,12 +142,19 @@
         </div>
     </section>
 
+
+
     <section id="projetos">
+
+        <div class="ifr-container">
+            <iframe src="./projetos.html" frameborder="0" class="ifr"></iframe>
+        </div>
+
         <div class="container">
                 <div class="flex flex-column centro">
                     <div class="flex-nowrap centro">
                         <h2 class="sub-titles">Meus Trabalhos em Destaque:</h2>
-                        <button class="cta-button-secundary">Ver Mais</button>
+                        <button class="cta-button-secundary btn-ifr">Ver Mais</button>
                     </div>
     
                     <p>Confira alguns dos projetos incríveis em meu
@@ -276,5 +284,8 @@
         </div>
     </footer>
     <script src="./script/app.js"></script>
+    <script src="./script/scroll.js"></script>
+    <script src="./script/open-project-ifr.js"></script>
+    
 </body>
 </html>

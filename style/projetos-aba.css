@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600&display=swap');
+
+:root {
+    --titles: 'Inclusive Sans';
+    --texts: 'Nunito Sans';
+    --color1: #00BFA6;
+    --color2: rgb(42, 78, 240);
+    --color3: rgb(28, 41, 214);
+    --white1: #fff;
+    --white2: #f1f1f1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--white2);
+}
+
+header {
+    width: 100vw;
+    padding: 1.5rem 0;
+    box-shadow: 0 5px 5px #04013369;
+    position: fixed;
+    top: -.8rem;
+    z-index: 1;
+    background-color: var(--white1);
+}
+
+header p {
+    line-height: 1.5rem !important;
+    font-size: .9rem;
+}
+
+main {
+    margin: 10rem auto;
+    width: 100vw;
+}
+
+h1, h3, .cta-button {
+    font-family: var(--titles);
+}
+
+p{
+    font-family: var(--texts);
+}
+
+.btn-ifr {
+    width: 2rem;
+    height: 3rem;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+#bar1, #bar2 {
+    width: 100%;
+    height: 3px;
+    margin-top: 1.5rem;
+    background-color: #00BFA6;
+    position: absolute;
+}
+
+#bar1 {
+    transform: rotate(-45deg);
+}
+
+#bar2 {
+    transform: rotate(45deg);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-temp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    main{
+        top: 10rem;
+    }
+
+    .grid-temp {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .card {
+    margin-bottom: 1rem;
+    border: 1px solid;
+  }
+
+  .card{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    height: 28rem;
+    background-color: var(--white1);
+    box-shadow: 0px 0px 5px 2px #787e9c8f;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.img-card {
+    margin-bottom: 1rem;
+    border: solid 1px;
+    width: 95%;
+    height: 15rem;
+    margin: .5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-card figure {
+    width: 100%;
+    height: 100%;
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+}
+
+.info-card {
+    width: 95%;
+    margin: 0 auto;
+}
+
+h3, p {
+    line-height: 2rem;
+}
+
+.cta-button{
+    width: 10rem;
+    height: 1.6rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color2);
+    color: var(--white1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cta-button:hover{
+    background-color:  var(--color3);
+    transform: scale(1.01);
+}
+
+
