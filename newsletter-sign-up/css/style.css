@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --roboto: 'Roboto';
+    --tomato: rgb(255, 98, 87);
+    --light-red: rgba(255, 107, 97, 0.452);
+    --strong-tomato: rgba(247,53,40,1);
+    --dark-slate:  rgb(36, 39, 66);
+    --charcoal-grey: rgb(54, 56, 78);
+    --grey: rgb(146, 148, 160);
+    --white: rgb(255, 255, 255);
+    --gradient-1: rgba(247,40,93,1);
+    --gradient-2:rgba(255,136,78,1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+}
+
+main {
+    width: 46%;
+    height: 65%;
+    padding: 1rem 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap-reverse;
+    background-color: var(--white);
+    font-family: var(--roboto);
+    border: none;
+    border-radius: 20px;
+}
+
+.content-text {
+    padding: 1.5rem;
+    width: 50%;
+}
+
+.content-text, form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: .8rem;
+}
+
+.content-text p {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+li img {
+    aspect-ratio: 3/4;
+    object-fit: contain;
+    width: .8rem;
+}
+
+form {
+    margin-top: .5rem;
+}
+
+label {
+    font-weight: 700;
+    font-size: .7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* onde o texto de invalido surge */
+#email-fail {
+    font-size: .7rem;
+    margin-bottom: 0;
+    color: var(--tomato);
+}
+
+#email {
+    height: 2.5rem;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+/* classe que é adicionadad quando o email está inválido */
+.invalid-email::placeholder{
+    color: var(--tomato);
+}
+
+.invalid-email {
+    background-color: var(--light-red);
+}
+
+button {
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-slate);
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+/* classe adicionada ao botão quando o email é invalido */
+.invalid-button {
+    cursor: not-allowed;
+}
+
+/* classe adicionada ao email quando ele é válido */
+.valid-button {
+    background: linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+}
+
+.valid-button:hover {
+    box-shadow: 1px 2px 15px 0px var(--tomato);
+}
+
+.img {
+    width: 49%;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 0;
+    object-fit:contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    /* background: url("/assets/images/illustration-sign-up-desktop.svg") no-repeat center; */
+}
+
+.img img {
+    height: 100%;
+    width: auto;
+    margin-right: 1rem;
+    margin-left: auto;
+}
+
+/* responsividade */
+@media (max-width: 450px) {
+    main {
+        width: 100%;
+        height: 100%;
+        align-items: normal;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 0;
+    }
+    .content-text {
+        width: 100%;
+        height: auto;
+    }
+    .content-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: .8rem;
+    }
+    
+    .content-text p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    ul{
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    ul li {
+        font-size: 1.2rem;
+        text-align: left;
+        width: auto;
+        gap: 1rem;
+    }
+    li img {
+        width: auto;
+        margin: 0;
+    }
+    label {
+        font-size: .8rem;
+    }
+    #email, button {
+        height: 3rem;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        
+        object-fit: contain;
+        margin: 0 auto;
+        padding: 0;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
