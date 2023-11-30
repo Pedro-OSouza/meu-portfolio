@@ -29,10 +29,11 @@ body {
 }
 
 main {
-    width: 46%;
+    width: 50%; /* ou outro valor que funcione bem para telas maiores */
     height: 65%;
     padding: 1rem 0 1rem 1rem;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     flex-wrap:wrap-reverse;
     background-color: var(--white);
@@ -43,7 +44,7 @@ main {
 
 .content-text {
     padding: 1.5rem;
-    width: 50%;
+    width: 45%
 }
 
 .content-text, form {
@@ -137,7 +138,7 @@ button {
 }
 
 .img {
-    width: 49%;
+    width: 45%;
     height: 100%;
     margin-left: 1%;
     margin-right: 0;
@@ -216,20 +217,5 @@ button {
     }
 }
 
-/* Responsividade para telas maiores */
-@media (min-width: 768px) {
-    main {
-        width: 50%; /* ou outro valor que funcione bem para telas maiores */
-        justify-content: space-around; /* ou outro valor que funcione bem para telas maiores */
-    }
-
-    .content-text {
-        width: 45%; /* ou outro valor que funcione bem para telas maiores */
-    }
-
-    .img {
-        width: 45%; /* ou outro valor que funcione bem para telas maiores */
-    }
-}
 
 
