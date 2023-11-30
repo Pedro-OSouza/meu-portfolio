@@ -4,7 +4,7 @@ function responsive() {
     let tela = window.innerWidth;
 
     if (tela < 500) {
-        img.src = "../assets/images/illustration-sign-up-mobile.svg"
+        img.src = "./assets/images/illustration-sign-up-mobile.svg"
     } else {
         img.src = "./assets/images/illustration-sign-up-desktop.svg";
     }
