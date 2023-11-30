@@ -216,3 +216,20 @@ button {
     }
 }
 
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+    main {
+        width: 60%; /* ou outro valor que funcione bem para telas maiores */
+        justify-content: space-around; /* ou outro valor que funcione bem para telas maiores */
+    }
+
+    .content-text {
+        width: 45%; /* ou outro valor que funcione bem para telas maiores */
+    }
+
+    .img {
+        width: 45%; /* ou outro valor que funcione bem para telas maiores */
+    }
+}
+
+
