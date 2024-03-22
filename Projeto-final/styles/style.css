@@ -1,0 +1,74 @@
+:root {
+    --green-primary: #77d777;
+    --green-secundary: #2F7059;
+    --yellow: #fdfd96;
+    --blue: #84b6f4;
+}
+
+
+/* header */
+ul li {
+    margin-bottom: 1rem;
+}
+
+/* hero */
+.text-shadow {
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.color-light {
+    color: #fafafa;
+}
+
+.list-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.column-line {
+    display: flex;
+    width: 2px;
+    height: 80%;
+}
+
+.bg-green {
+    background-color: var(--green-primary);
+    transition: .5s;
+}
+
+.bg-green-secundary{
+    background-color: var(--green-secundary);
+    transition: .5s;
+}
+
+.color-green {
+    background-color: var(--green-primary);
+    transition: .5s;
+}
+
+.color-green-secundary {
+    color: var(--green-secundary);
+    transition: .5s;
+}
+
+.green-hoover:hover {
+    background-color: var(--green-secundary);
+    color: #fff;
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.border-yellow {
+    border-color: var(--yellow);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.border-blue {
+    border-color: var(--blue);
+}
