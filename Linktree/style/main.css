@@ -118,6 +118,7 @@ button{
     position: absolute;
     transition: .3s;
     padding: 0 3rem;
+    overflow-y: scroll;
 }
 
 
