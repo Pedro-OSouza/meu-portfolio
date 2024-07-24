@@ -13,8 +13,8 @@ Este projeto é um linktree para as minhas redes sociais, o objetivo é facilita
 ## Design
 As imagens abaixo tratam do design preciso da linktree.
 <div style="display: flex; flex-wrap: wrap; gap: 2%;">
-    <img src="../Design/2.jpg" width="49%" alt="Imagem do design 1">
-    <img src="../Design/3.jpg" width="49%" alt="Imagem do design 2">
+    <img src="./Design/2.jpg" width="49%" alt="Imagem do design 1">
+    <img src="./Design/3.jpg" width="49%" alt="Imagem do design 2">
 </div>
 
 ## Cores do projeto
@@ -25,9 +25,9 @@ Main, button active bacground: #222222
 
 ## Imagens usadas no projeto
 <div style="display: flex; flex-wrap: wrap; gap: 2%;">
-    <a href="../Img/Programação De Código De Caracteres De Fundo Azul Papel de Parede Para Download Gratuito - Pngtree.jpg" style="height: 250px"><img src="../Img/Programação De Código De Caracteres De Fundo Azul Papel de Parede Para Download Gratuito - Pngtree.jpg" ">
+    <a href="./Img/Programação De Código De Caracteres De Fundo Azul Papel de Parede Para Download Gratuito - Pngtree.jpg" style="height: 250px"><img src="./Img/Programação De Código De Caracteres De Fundo Azul Papel de Parede Para Download Gratuito - Pngtree.jpg" ">
     </a>
-    <a href="../Img/coding anime boy black and white.jpg" style="width:49%;height: 250px"><img src="../Img/coding anime boy black and white.jpg">
+    <a href="./Img/coding anime boy black and white.jpg" style="width:49%;height: 250px"><img src="./Img/coding anime boy black and white.jpg">
     </a>
 </div>
 

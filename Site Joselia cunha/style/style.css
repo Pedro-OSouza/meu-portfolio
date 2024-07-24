@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #fff;
+}
+
+.navbar-brand{
+    & img {
+        width: 81px;
+        
+    }
+}
+
+.nav-link {
+    color: #737373;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+#inicio {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 5rem;
+
+    & .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+        z-index: 1;
+    }
+
+    & .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    & .btn {
+        border: 1px solid #737373;
+    }
+}
+
+p, .btn {
+    font-weight: 500;
+}
+
+ .card-custom {
+    color: #f0f0f0;
+    background-color: transparent;
+    border: none;
+
+    & h3 {
+        color: #38b6ff;
+    }
+
+    & .card-header, .card-body {
+        background-color: #4f4f4f;
+        
+    }
+}
+
+.card-custom img {
+    width: 64px;
+
+}
+
+.c-orange {
+    color: #FE6100;
+}
+
+ .image-container {
+    max-width: 50%;
+}
+ .image-container img{
+    max-width: 100%;
+}
+
+#servicos ul {
+    list-style-type: none;
+    font-weight: 500;
+    margin-left: -2rem;
+
+    & li {
+        margin-bottom: .5rem;
+    }
+}
+
+#depoimentos {
+    background-color: #333333;
+    color: #fff;
+
+    & .card-custom .card-header h3 {
+        color: #fff;
+    }
+
+    & .card-custom img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: none;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+}
+
+footer {
+    background-color: #191919;
+    color: #737373;
+
+    & .footer-logo {
+        width: 128px;
+    }
+
+    & .footer-copy {
+        font-size: 14px;
+    }
+
+    & .footer-text {
+        font-size: 15px;
+    }
+
+    & hr {
+        border: 1px solid #737373;
+    }
+}
+
+
+
+/* Imagem de fundo para dispositivos grandes */
+@media (min-width: 992px) {
+    
+    p{
+        font-size: 1.4rem;
+    }
+
+    .left-auto {
+        margin-left: auto;
+    }
+
+    #inicio {
+        background: url('../img/terceira-idade.webp') no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+
+        & .container {
+            height: 100%;
+            
+            & h1 {
+                font-size: 2.25rem;
+            }
+
+            & p {
+                font-size: 1.5rem;
+            }
+
+            & .btn {
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+    .card-custom .card-header, .card-custom .card-body {
+        border-radius: 20px;
+    }
+
+    #valores .card-body {
+        height: 16.9rem;
+        margin-top: 1rem;
+
+    }
+
+    #servicos ul {
+        font-size: 1.2rem;
+    }
+
+    #servicos .image-container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #depoimentos .card-custom .card-depoimento {
+        height: 15.5rem;
+        margin-top: 1rem;
+    }
+
+    .hr {
+       border: 1px solid #737373;
+       background-color: #737373;
+       height: 1px;
+       max-width: 404px;
+    }
+
+}
+
+
+/* Imagem de fundo para dispositivos móveis */
+@media (max-width: 991px) {
+
+    .nav-item {
+        margin: 1rem 0;
+        font-size: 16px;
+    }
+
+    #inicio {
+        background: url('../img/hero-img.jpg') no-repeat center center;
+        background-size: cover;
+
+        & .container {
+            height: 100%;
+            
+            & h1 {
+                font-size: 1.5rem;
+            }
+
+            & p, .btn {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    
+
+    .card-custom .card-header{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .card-custom .card-body {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    .btn-form {
+        width: 100%;
+    }
+}
