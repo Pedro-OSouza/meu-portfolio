@@ -11,6 +11,11 @@ header {
         width: 81px;
         
     }
+
+    & h1 {
+        font-size: 1rem;
+        margin: auto 0;
+    }
 }
 
 .nav-link {
@@ -48,6 +53,17 @@ section {
     }
 }
 
+#valores {
+    position: relative;
+    z-index: 6;
+    background-color: #fff;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin-top: -8%;
+    padding-top: 10rem;
+
+}
+
 p, .btn {
     font-weight: 500;
 }
@@ -72,6 +88,10 @@ p, .btn {
 
 }
 
+.card-body p {
+    font-size: 1.3rem;
+}
+
 .c-orange {
     color: #FE6100;
 }
@@ -83,6 +103,10 @@ p, .btn {
     max-width: 100%;
 }
 
+#img-jo {
+    border-radius: 50%;
+}
+
 #servicos ul {
     list-style-type: none;
     font-weight: 500;
@@ -91,6 +115,17 @@ p, .btn {
     & li {
         margin-bottom: .5rem;
     }
+}
+
+
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-normal {
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 #depoimentos {
@@ -110,6 +145,10 @@ p, .btn {
         object-fit: cover;
     }
 
+}
+
+.img-border-1 {
+    border-radius: 20px;
 }
 
 footer {
@@ -139,7 +178,7 @@ footer {
 @media (min-width: 992px) {
     
     p{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .left-auto {
@@ -147,7 +186,7 @@ footer {
     }
 
     #inicio {
-        background: url('../img/terceira-idade.webp') no-repeat center center;
+        background: url('../img/hero-img.png') no-repeat center center;
         background-size: cover;
         height: 100vh;
 
@@ -160,7 +199,15 @@ footer {
 
             & p {
                 font-size: 1.5rem;
+
+                & small {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    font-style:italic;
+                }
             }
+
+            
 
             & .btn {
                 font-size: 1rem;
@@ -212,7 +259,7 @@ footer {
     }
 
     #inicio {
-        background: url('../img/hero-img.jpg') no-repeat center center;
+        background: url('../img/hero-img.png') no-repeat center center;
         background-size: cover;
 
         & .container {
@@ -224,6 +271,9 @@ footer {
 
             & p, .btn {
                 font-size: 1rem;
+                & small {
+                    font-size: .7rem;
+                }
             }
         }
     }
