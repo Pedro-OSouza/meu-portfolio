@@ -251,16 +251,26 @@ footer {
 
 
 /* Imagem de fundo para dispositivos móveis */
-@media (max-width: 991px) {
+@media (width < 991px) {
 
+    .navbar-brand h1 {
+        font-size: .8rem;
+    }
     .nav-item {
         margin: 1rem 0;
         font-size: 16px;
     }
 
+    #valores{
+        border-top-left-radius: 3.125rem;
+        border-top-right-radius: 3.125rem;
+        margin-top: -15%;
+    }
+
     #inicio {
         background: url('../img/hero-img.png') no-repeat center center;
         background-size: cover;
+        
 
         & .container {
             height: 100%;
