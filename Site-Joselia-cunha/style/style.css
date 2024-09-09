@@ -6,6 +6,8 @@ header {
     background-color: #fff;
 }
 
+
+
 .navbar-brand{
     & img {
         width: 81px;
@@ -248,6 +250,8 @@ footer {
     }
 
 }
+
+
 
 
 /* Imagem de fundo para dispositivos móveis */
